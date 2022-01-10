@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>CV viwer</title>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <h1 onclick="mainPage()" style="cursor: pointer">
+        <span>1-2-3</span>Web Design
+      </h1>
+      <nav class="navbar">
+        <div class="linkHome"><a href="#">Home</a></div>
+        <div class="linkAbout">
+          <a href="#about">About</a>
+        </div>
+        <div class="linkServices"><a href="#service">Services</a></div>
+      </nav>
+    </header>
+
+    <div class="register hide" id="register-page">
+      <form action="#">
+        <h3>Contact us</h3>
+        <label for="register-name">Name</label>
+        <input id="register-name" type="text" placeholder="Enter your Name" />
+        <label for="register-email">Email Address</label>
+        <input id="register-email" type="text" placeholder="Enter your Email" />
+        <label for="register-messgae">Message</label>
+        <textarea
+          id="register-messgae"
+          name="Message"
+          cols="30"
+          rows="3"
+          placeholder="Your message..."
+        >
+        </textarea>
+        <input type="submit" value="Send" class="btn" />
+      </form>
+    </div>
+
+    <div class="cv-list" id="cv-list-page"></div>
+
+    <div class="cv-body hide" id="cv-body-page"></div>
+
+    <div class="hide" id="service-page">
+      <h1 style="font-size: 60px">SERVICE PAGE</h1>
+    </div>
+
+    <div class="hide" id="about-page">
+      <h1 style="font-size: 60px">ABOUT PAGE</h1>
+    </div>
+
+    <div class="add-new hide">
+      <form class="new-member">
+         <label for="name-field">First Name</label>
+         <input type="text" id="name-field" placeholder="" name="firstName" />
+         <label for="lastName-field">Last Name</label>
+         <input type="text" id="lastName-field" placeholder="" name="lastName" />
+         <label for="phone-field">Phone</label>
+         <input type="text" name="phone" id="phone-field">
+         <label for="email-field">Email</label>
+         <input type="email" id="email-field" name="email">
+         <label for="education-field">Education</label>
+         <input type="text" name="education" id="education-field">
+         <label for="work-field">Work Experience</label>
+         <input type="text" name="workExperience" id="work-field">
+         <label for="trainings-field">Trainings</label>
+         <input type="text" name="trainings" id="trainings-field">
+         <input type="submit" value="submit" id="submit-button">
+     </form>
+   </div> 
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
